@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "mainSoc.py", line 154, in <module>
+    makeLineup()
+  File "mainSoc.py", line 131, in makeLineup
+    players = SDcsvBefore(currLoc, starters, teams, date, scoring, eloWeights)
+  File "/home/DAVIDSON/beyokoyama/excellentcode/csvScrapersBefore.py", line 83, in showdownCsvScrape
+    row[15] = weightScrape(pid, row[7], date)
+  File "/home/DAVIDSON/beyokoyama/excellentcode/fbrefScraperWeights.py", line 184, in playerScraper
+    table = soupRef.find("div", {"id": "content"}).find("table", {"id": "matchlogs_all"}).find("tbody")
+AttributeError: 'NoneType' object has no attribute 'find'
